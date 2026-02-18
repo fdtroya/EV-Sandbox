@@ -1,0 +1,87 @@
+[0.000000] (-) TimerEvent: {}
+[0.000518] (tv_sim) JobQueued: {'identifier': 'tv_sim', 'dependencies': OrderedDict()}
+[0.001265] (tv_sim) JobStarted: {'identifier': 'tv_sim'}
+[0.099745] (-) TimerEvent: {}
+[0.200034] (-) TimerEvent: {}
+[0.300955] (-) TimerEvent: {}
+[0.401319] (-) TimerEvent: {}
+[0.501616] (-) TimerEvent: {}
+[0.601883] (-) TimerEvent: {}
+[0.702162] (-) TimerEvent: {}
+[0.802691] (-) TimerEvent: {}
+[0.902936] (-) TimerEvent: {}
+[1.003196] (-) TimerEvent: {}
+[1.075200] (tv_sim) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/tv_sim', 'build', '--build-base', '/workspaces/EV-Torque-Vectoring/build/tv_sim/build', 'install', '--record', '/workspaces/EV-Torque-Vectoring/build/tv_sim/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspaces/EV-Torque-Vectoring/src/tv_sim', 'env': {'PYTHON_BASIC_REPL': '1', 'HOSTNAME': 'fernando-Inspiron-7577', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/b6a47e94e326b5c209d118cf0f994d6065585705/extensions/git/dist/askpass.sh', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu/nvidia/current:', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/b6a47e94e326b5c209d118cf0f994d6065585705/bin/helpers/browser.sh', 'AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS': '1', 'HOME': '/home/ros', 'TERM_PROGRAM_VERSION': '1.109.3', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-28d15743-e9d7-48a6-88c8-176a345f72a7.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/b6a47e94e326b5c209d118cf0f994d6065585705/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/b6a47e94e326b5c209d118cf0f994d6065585705/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/ros/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-60ba7f7e-0d81-46df-ba4b-d204aece33bd.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm-256color', 'QT_X11_NO_MITSHM': '1', 'PATH': '/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/b6a47e94e326b5c209d118cf0f994d6065585705/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ros/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-60ba7f7e-0d81-46df-ba4b-d204aece33bd.sock","/home/ros/.gnupg/S.gpg-agent"]', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/ros/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c46f97e4c8f186b2.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/ros/.vscode-server/data/User/workspaceStorage/c92fbbaa6691beab820be72d94a8c65f/ms-python.python/pythonrc.py', '__NV_PRIME_RENDER_OFFLOAD': '1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-6687242e41.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-60ba7f7e-0d81-46df-ba4b-d204aece33bd.sock', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': '', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/EV-Torque-Vectoring/build/tv_sim', 'PYTHONPATH': '/workspaces/EV-Torque-Vectoring/build/tv_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.103308] (-) TimerEvent: {}
+[1.203597] (-) TimerEvent: {}
+[1.303837] (-) TimerEvent: {}
+[1.404099] (-) TimerEvent: {}
+[1.411403] (tv_sim) StdoutLine: {'line': b'running egg_info\n'}
+[1.441274] (tv_sim) StdoutLine: {'line': b'writing ../../build/tv_sim/tv_sim.egg-info/PKG-INFO\n'}
+[1.441602] (tv_sim) StdoutLine: {'line': b'writing dependency_links to ../../build/tv_sim/tv_sim.egg-info/dependency_links.txt\n'}
+[1.441952] (tv_sim) StdoutLine: {'line': b'writing entry points to ../../build/tv_sim/tv_sim.egg-info/entry_points.txt\n'}
+[1.442248] (tv_sim) StdoutLine: {'line': b'writing requirements to ../../build/tv_sim/tv_sim.egg-info/requires.txt\n'}
+[1.442525] (tv_sim) StdoutLine: {'line': b'writing top-level names to ../../build/tv_sim/tv_sim.egg-info/top_level.txt\n'}
+[1.490163] (tv_sim) StdoutLine: {'line': b"reading manifest file '../../build/tv_sim/tv_sim.egg-info/SOURCES.txt'\n"}
+[1.491249] (tv_sim) StdoutLine: {'line': b"writing manifest file '../../build/tv_sim/tv_sim.egg-info/SOURCES.txt'\n"}
+[1.491621] (tv_sim) StdoutLine: {'line': b'running build\n'}
+[1.491816] (tv_sim) StdoutLine: {'line': b'running build_py\n'}
+[1.492220] (tv_sim) StdoutLine: {'line': b'copying tv_sim/nodes/controller_node.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/nodes\n'}
+[1.492674] (tv_sim) StdoutLine: {'line': b'creating /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/utils\n'}
+[1.492966] (tv_sim) StdoutLine: {'line': b'copying tv_sim/core/utils/config.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/utils\n'}
+[1.493156] (tv_sim) StdoutLine: {'line': b'copying tv_sim/core/utils/__init__.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/utils\n'}
+[1.493360] (tv_sim) StdoutLine: {'line': b'creating /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/models\n'}
+[1.493659] (tv_sim) StdoutLine: {'line': b'copying tv_sim/core/models/motor_model.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/models\n'}
+[1.493910] (tv_sim) StdoutLine: {'line': b'copying tv_sim/core/models/ev_7dof.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/models\n'}
+[1.494102] (tv_sim) StdoutLine: {'line': b'copying tv_sim/core/models/tire_model.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/models\n'}
+[1.494291] (tv_sim) StdoutLine: {'line': b'copying tv_sim/core/models/__init__.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/models\n'}
+[1.494515] (tv_sim) StdoutLine: {'line': b'creating /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/controllers\n'}
+[1.494711] (tv_sim) StdoutLine: {'line': b'copying tv_sim/core/controllers/torque_vectoring.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/controllers\n'}
+[1.495088] (tv_sim) StdoutLine: {'line': b'copying tv_sim/core/controllers/torque_allocator.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/controllers\n'}
+[1.495284] (tv_sim) StdoutLine: {'line': b'copying tv_sim/core/controllers/motor_control.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/controllers\n'}
+[1.495474] (tv_sim) StdoutLine: {'line': b'copying tv_sim/core/controllers/__init__.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/controllers\n'}
+[1.495654] (tv_sim) StdoutLine: {'line': b'copying tv_sim/core/controllers/drive_intent.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/controllers\n'}
+[1.496309] (tv_sim) StdoutLine: {'line': b'running install\n'}
+[1.503239] (tv_sim) StdoutLine: {'line': b'running install_lib\n'}
+[1.504170] (-) TimerEvent: {}
+[1.534413] (tv_sim) StdoutLine: {'line': b'creating /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/utils\n'}
+[1.534747] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/utils/config.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/utils\n'}
+[1.534978] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/utils/__init__.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/utils\n'}
+[1.535177] (tv_sim) StdoutLine: {'line': b'creating /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/models\n'}
+[1.535341] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/models/motor_model.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/models\n'}
+[1.535590] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/models/ev_7dof.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/models\n'}
+[1.535799] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/models/tire_model.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/models\n'}
+[1.535997] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/models/__init__.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/models\n'}
+[1.536101] (tv_sim) StdoutLine: {'line': b'creating /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/controllers\n'}
+[1.536222] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/controllers/torque_vectoring.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/controllers\n'}
+[1.536367] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/controllers/torque_allocator.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/controllers\n'}
+[1.536545] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/controllers/motor_control.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/controllers\n'}
+[1.536729] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/controllers/__init__.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/controllers\n'}
+[1.536920] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/controllers/drive_intent.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/controllers\n'}
+[1.537071] (tv_sim) StdoutLine: {'line': b'copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/nodes/controller_node.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/nodes\n'}
+[1.537520] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/utils/config.py to config.cpython-312.pyc\n'}
+[1.538041] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/utils/__init__.py to __init__.cpython-312.pyc\n'}
+[1.538344] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/models/motor_model.py to motor_model.cpython-312.pyc\n'}
+[1.538568] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/models/ev_7dof.py to ev_7dof.cpython-312.pyc\n'}
+[1.540150] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/models/tire_model.py to tire_model.cpython-312.pyc\n'}
+[1.540831] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/models/__init__.py to __init__.cpython-312.pyc\n'}
+[1.541139] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/controllers/torque_vectoring.py to torque_vectoring.cpython-312.pyc\n'}
+[1.541675] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/controllers/torque_allocator.py to torque_allocator.cpython-312.pyc\n'}
+[1.542151] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/controllers/motor_control.py to motor_control.cpython-312.pyc\n'}
+[1.542484] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/controllers/__init__.py to __init__.cpython-312.pyc\n'}
+[1.542752] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/controllers/drive_intent.py to drive_intent.cpython-312.pyc\n'}
+[1.543404] (tv_sim) StdoutLine: {'line': b'byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/nodes/controller_node.py to controller_node.cpython-312.pyc\n'}
+[1.544322] (tv_sim) StdoutLine: {'line': b'running install_data\n'}
+[1.544536] (tv_sim) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.570618] (tv_sim) StdoutLine: {'line': b"removing '/workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim-0.0.1-py3.12.egg-info' (and everything under it)\n"}
+[1.570990] (tv_sim) StdoutLine: {'line': b'Copying ../../build/tv_sim/tv_sim.egg-info to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim-0.0.1-py3.12.egg-info\n'}
+[1.572066] (tv_sim) StdoutLine: {'line': b'running install_scripts\n'}
+[1.604256] (-) TimerEvent: {}
+[1.704490] (-) TimerEvent: {}
+[1.753987] (tv_sim) StdoutLine: {'line': b'Installing controller script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim\n'}
+[1.754422] (tv_sim) StdoutLine: {'line': b'Installing driver script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim\n'}
+[1.754792] (tv_sim) StdoutLine: {'line': b'Installing plant script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim\n'}
+[1.755571] (tv_sim) StdoutLine: {'line': b"writing list of installed files to '/workspaces/EV-Torque-Vectoring/build/tv_sim/install.log'\n"}
+[1.788015] (tv_sim) CommandEnded: {'returncode': 0}
+[1.800622] (tv_sim) JobEnded: {'identifier': 'tv_sim', 'rc': 0}
+[1.801399] (-) EventReactorShutdown: {}

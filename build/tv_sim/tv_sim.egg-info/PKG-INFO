@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: tv-sim
+Version: 0.0.1
+Summary: Modular Torque Vectoring Simulator
+Maintainer: ros
+License: Apache License 2.0

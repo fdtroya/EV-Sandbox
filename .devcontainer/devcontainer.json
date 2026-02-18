@@ -1,0 +1,41 @@
+{
+    "name": "ROS 2 Torque Vectoring",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ranch-hand-robotics.rde-ros-2",
+                "ms-python.python",
+                "ms-vscode.cpptools",
+                "redhat.vscode-xml",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.datawrangler"
+
+            ]
+        }
+    },
+   "containerEnv": {
+    "DISPLAY": "${localEnv:DISPLAY}",
+    "NVIDIA_VISIBLE_DEVICES": "all",
+    "NVIDIA_DRIVER_CAPABILITIES": "all",
+    "__NV_PRIME_RENDER_OFFLOAD": "1",
+    "__GLX_VENDOR_LIBRARY_NAME": "nvidia",
+    "QT_X11_NO_MITSHM": "1"
+},"initializeCommand": "touch .devcontainer/.xauth && chmod 666 .devcontainer/.xauth",
+
+  "runArgs": [
+    "--net=host",
+    "--gpus=all",
+    "--privileged",
+    "--env=DISPLAY",
+    "--env=XAUTHORITY=/tmp/.docker.xauth",
+    "--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw",
+    // 2. Map the local file (in project) to the temp location (in container)
+    "--volume=${localWorkspaceFolder}/.devcontainer/.xauth:/tmp/.docker.xauth:rw"
+  ],
+    "postCreateCommand": "sudo apt-get update && rosdep update && rosdep install --from-paths src --ignore-src -y",
+    "remoteUser": "ros"
+}

@@ -1,0 +1,29 @@
+[1.680s] Invoking command in '/workspaces/EV-Torque-Vectoring/src/tv_sim': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/workspaces/EV-Torque-Vectoring/build/tv_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tv_sim build --build-base /workspaces/EV-Torque-Vectoring/build/tv_sim/build install --record /workspaces/EV-Torque-Vectoring/build/tv_sim/install.log --single-version-externally-managed install_data
+[2.277s] running egg_info
+[2.323s] writing ../../build/tv_sim/tv_sim.egg-info/PKG-INFO
+[2.324s] writing dependency_links to ../../build/tv_sim/tv_sim.egg-info/dependency_links.txt
+[2.324s] writing entry points to ../../build/tv_sim/tv_sim.egg-info/entry_points.txt
+[2.324s] writing requirements to ../../build/tv_sim/tv_sim.egg-info/requires.txt
+[2.324s] writing top-level names to ../../build/tv_sim/tv_sim.egg-info/top_level.txt
+[2.444s] reading manifest file '../../build/tv_sim/tv_sim.egg-info/SOURCES.txt'
+[2.446s] writing manifest file '../../build/tv_sim/tv_sim.egg-info/SOURCES.txt'
+[2.446s] running build
+[2.448s] running build_py
+[2.448s] copying tv_sim/core/utils/config.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/utils
+[2.449s] copying tv_sim/core/models/ev_7dof.py -> /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/models
+[2.451s] running install
+[2.468s] running install_lib
+[2.510s] copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/utils/config.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/utils
+[2.511s] copying /workspaces/EV-Torque-Vectoring/build/tv_sim/build/lib/tv_sim/core/models/ev_7dof.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/models
+[2.513s] byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/utils/config.py to config.cpython-312.pyc
+[2.515s] byte-compiling /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim/core/models/ev_7dof.py to ev_7dof.cpython-312.pyc
+[2.518s] running install_data
+[2.518s] running install_egg_info
+[2.578s] removing '/workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim-0.0.1-py3.12.egg-info' (and everything under it)
+[2.579s] Copying ../../build/tv_sim/tv_sim.egg-info to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv_sim-0.0.1-py3.12.egg-info
+[2.583s] running install_scripts
+[2.872s] Installing controller script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim
+[2.873s] Installing driver script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim
+[2.873s] Installing plant script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim
+[2.874s] writing list of installed files to '/workspaces/EV-Torque-Vectoring/build/tv_sim/install.log'
+[2.928s] Invoked command in '/workspaces/EV-Torque-Vectoring/src/tv_sim' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/workspaces/EV-Torque-Vectoring/build/tv_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tv_sim build --build-base /workspaces/EV-Torque-Vectoring/build/tv_sim/build install --record /workspaces/EV-Torque-Vectoring/build/tv_sim/install.log --single-version-externally-managed install_data

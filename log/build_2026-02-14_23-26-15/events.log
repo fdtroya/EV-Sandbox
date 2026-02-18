@@ -1,0 +1,52 @@
+[0.000000] (-) TimerEvent: {}
+[0.000340] (tv_sim) JobQueued: {'identifier': 'tv_sim', 'dependencies': OrderedDict()}
+[0.000407] (tv_sim) JobStarted: {'identifier': 'tv_sim'}
+[0.099521] (-) TimerEvent: {}
+[0.199830] (-) TimerEvent: {}
+[0.300120] (-) TimerEvent: {}
+[0.400441] (-) TimerEvent: {}
+[0.500676] (-) TimerEvent: {}
+[0.600910] (-) TimerEvent: {}
+[0.701436] (-) TimerEvent: {}
+[0.801736] (-) TimerEvent: {}
+[0.901971] (-) TimerEvent: {}
+[1.002246] (-) TimerEvent: {}
+[1.094993] (tv_sim) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/workspaces/EV-Torque-Vectoring/build/tv_sim/build', '--no-deps', 'symlink_data'], 'cwd': '/workspaces/EV-Torque-Vectoring/build/tv_sim', 'env': {'PYTHON_BASIC_REPL': '1', 'HOSTNAME': 'fernando-Inspiron-7577', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/b6a47e94e326b5c209d118cf0f994d6065585705/extensions/git/dist/askpass.sh', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/lib/x86_64-linux-gnu/nvidia/current:', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/b6a47e94e326b5c209d118cf0f994d6065585705/bin/helpers/browser.sh', 'AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS': '1', 'HOME': '/home/ros', 'TERM_PROGRAM_VERSION': '1.109.3', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-7c887cb9-e14b-4ee9-a04d-c97501ca92fa.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/b6a47e94e326b5c209d118cf0f994d6065585705/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/b6a47e94e326b5c209d118cf0f994d6065585705/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/workspaces/EV-Torque-Vectoring/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2726ab28-ac0a-48ae-9085-f98d791379bb.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm-256color', 'QT_X11_NO_MITSHM': '1', 'PATH': '/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/b6a47e94e326b5c209d118cf0f994d6065585705/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-2726ab28-ac0a-48ae-9085-f98d791379bb.sock","/home/ros/.gnupg/S.gpg-agent"]', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/ros/.vscode-server/data/User/workspaceStorage/c92fbbaa6691beab820be72d94a8c65f/ms-python.python/pythonrc.py', '__NV_PRIME_RENDER_OFFLOAD': '1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-6687242e41.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-2726ab28-ac0a-48ae-9085-f98d791379bb.sock', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': '', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/EV-Torque-Vectoring/build/tv_sim', 'PYTHONPATH': '/workspaces/EV-Torque-Vectoring/build/tv_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages:/workspaces/EV-Torque-Vectoring/build/tv_sim:/workspaces/EV-Torque-Vctoring/build/tv_sim:/workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.102369] (-) TimerEvent: {}
+[1.202660] (-) TimerEvent: {}
+[1.302966] (-) TimerEvent: {}
+[1.403267] (-) TimerEvent: {}
+[1.503529] (-) TimerEvent: {}
+[1.533998] (tv_sim) StdoutLine: {'line': b'running develop\n'}
+[1.603648] (-) TimerEvent: {}
+[1.703924] (-) TimerEvent: {}
+[1.796343] (tv_sim) StdoutLine: {'line': b'running egg_info\n'}
+[1.796657] (tv_sim) StdoutLine: {'line': b'creating tv_sim.egg-info\n'}
+[1.804036] (-) TimerEvent: {}
+[1.825305] (tv_sim) StdoutLine: {'line': b'writing tv_sim.egg-info/PKG-INFO\n'}
+[1.825861] (tv_sim) StdoutLine: {'line': b'writing dependency_links to tv_sim.egg-info/dependency_links.txt\n'}
+[1.826028] (tv_sim) StdoutLine: {'line': b'writing entry points to tv_sim.egg-info/entry_points.txt\n'}
+[1.826169] (tv_sim) StdoutLine: {'line': b'writing requirements to tv_sim.egg-info/requires.txt\n'}
+[1.826322] (tv_sim) StdoutLine: {'line': b'writing top-level names to tv_sim.egg-info/top_level.txt\n'}
+[1.826460] (tv_sim) StdoutLine: {'line': b"writing manifest file 'tv_sim.egg-info/SOURCES.txt'\n"}
+[1.878913] (tv_sim) StdoutLine: {'line': b"reading manifest file 'tv_sim.egg-info/SOURCES.txt'\n"}
+[1.879971] (tv_sim) StdoutLine: {'line': b"writing manifest file 'tv_sim.egg-info/SOURCES.txt'\n"}
+[1.903772] (tv_sim) StdoutLine: {'line': b'running build_ext\n'}
+[1.904083] (-) TimerEvent: {}
+[1.904200] (tv_sim) StdoutLine: {'line': b'Creating /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv-sim.egg-link (link to .)\n'}
+[1.904797] (tv_sim) StdoutLine: {'line': b'Installing controller script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim\n'}
+[1.905065] (tv_sim) StdoutLine: {'line': b'Installing driver script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim\n'}
+[1.905271] (tv_sim) StdoutLine: {'line': b'Installing plant script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim\n'}
+[1.905559] (tv_sim) StdoutLine: {'line': b'\n'}
+[1.905872] (tv_sim) StdoutLine: {'line': b'Installed /workspaces/EV-Torque-Vectoring/build/tv_sim\n'}
+[1.906011] (tv_sim) StdoutLine: {'line': b'running symlink_data\n'}
+[1.906226] (tv_sim) StdoutLine: {'line': b'creating /workspaces/EV-Torque-Vectoring/install/tv_sim/share/ament_index\n'}
+[1.906395] (tv_sim) StdoutLine: {'line': b'creating /workspaces/EV-Torque-Vectoring/install/tv_sim/share/ament_index/resource_index\n'}
+[1.906532] (tv_sim) StdoutLine: {'line': b'creating /workspaces/EV-Torque-Vectoring/install/tv_sim/share/ament_index/resource_index/packages\n'}
+[1.906658] (tv_sim) StdoutLine: {'line': b'symbolically linking /workspaces/EV-Torque-Vectoring/build/tv_sim/resource/tv_sim -> /workspaces/EV-Torque-Vectoring/install/tv_sim/share/ament_index/resource_index/packages\n'}
+[1.906804] (tv_sim) StdoutLine: {'line': b'symbolically linking /workspaces/EV-Torque-Vectoring/build/tv_sim/package.xml -> /workspaces/EV-Torque-Vectoring/install/tv_sim/share/tv_sim\n'}
+[1.906984] (tv_sim) StdoutLine: {'line': b'creating /workspaces/EV-Torque-Vectoring/install/tv_sim/share/tv_sim/launch\n'}
+[1.907112] (tv_sim) StdoutLine: {'line': b'symbolically linking /workspaces/EV-Torque-Vectoring/build/tv_sim/launch/launch.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/share/tv_sim/launch\n'}
+[1.950279] (tv_sim) CommandEnded: {'returncode': 0}
+[1.969293] (tv_sim) JobEnded: {'identifier': 'tv_sim', 'rc': 0}
+[1.970167] (-) EventReactorShutdown: {}

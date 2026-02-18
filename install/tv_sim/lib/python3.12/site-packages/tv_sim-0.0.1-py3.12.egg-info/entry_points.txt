@@ -1,0 +1,4 @@
+[console_scripts]
+controller = tv_sim.nodes.controller_node:main
+driver = tv_sim.nodes.driving_node:main
+plant = tv_sim.nodes.plant_node:main

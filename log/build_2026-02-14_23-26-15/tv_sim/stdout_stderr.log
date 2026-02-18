@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating tv_sim.egg-info
+writing tv_sim.egg-info/PKG-INFO
+writing dependency_links to tv_sim.egg-info/dependency_links.txt
+writing entry points to tv_sim.egg-info/entry_points.txt
+writing requirements to tv_sim.egg-info/requires.txt
+writing top-level names to tv_sim.egg-info/top_level.txt
+writing manifest file 'tv_sim.egg-info/SOURCES.txt'
+reading manifest file 'tv_sim.egg-info/SOURCES.txt'
+writing manifest file 'tv_sim.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/python3.12/site-packages/tv-sim.egg-link (link to .)
+Installing controller script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim
+Installing driver script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim
+Installing plant script to /workspaces/EV-Torque-Vectoring/install/tv_sim/lib/tv_sim
+
+Installed /workspaces/EV-Torque-Vectoring/build/tv_sim
+running symlink_data
+creating /workspaces/EV-Torque-Vectoring/install/tv_sim/share/ament_index
+creating /workspaces/EV-Torque-Vectoring/install/tv_sim/share/ament_index/resource_index
+creating /workspaces/EV-Torque-Vectoring/install/tv_sim/share/ament_index/resource_index/packages
+symbolically linking /workspaces/EV-Torque-Vectoring/build/tv_sim/resource/tv_sim -> /workspaces/EV-Torque-Vectoring/install/tv_sim/share/ament_index/resource_index/packages
+symbolically linking /workspaces/EV-Torque-Vectoring/build/tv_sim/package.xml -> /workspaces/EV-Torque-Vectoring/install/tv_sim/share/tv_sim
+creating /workspaces/EV-Torque-Vectoring/install/tv_sim/share/tv_sim/launch
+symbolically linking /workspaces/EV-Torque-Vectoring/build/tv_sim/launch/launch.py -> /workspaces/EV-Torque-Vectoring/install/tv_sim/share/tv_sim/launch
