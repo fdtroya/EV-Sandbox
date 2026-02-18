@@ -15,7 +15,7 @@ Currently, I'm using an **LQR controller** for torque vectoring, but I've hit a 
 
 ---
 
-##System Architecture
+## System Architecture
 
 The project is modularized into ROS2 nodes to keep the physics, control, and inputs estimating separate.
 
