@@ -11,7 +11,7 @@ Welcome to my vehicle dynamics sandbox! This project is a high-fidelity simulati
 
 The goal here isn't just to make a car move; it's to simulate the "messy" physics of real-world driving to test advanced control strategies. I'm simulating a full **18 Degrees of Freedom (DOF)** model with complex **2D LuGre tire friction**, which makes the handling significantly more realistic (and challenging) than standard bicycle models.
 
-Currently, I'm using an **LQR controller** for torque vectoring, but I've hit a ceiling: the controller assumes it knows the friction perfectly, which it rarely does in real life, while the physics run the lugre model the controller, and the reference for it, run a pacejka aproximation. To fix this, I'm actively working on a **Physics-Informed Neural Network (PINN)** to estimate friction in real-time.
+Currently, I'm using an **LQR controller** for torque vectoring, but I've hit a ceiling: the controller assumes it knows the friction perfectly, which it rarely does in real life, while the physics run the LuGre model the controller, and the reference for it, run a Pacejka approximation. To fix this, I'm actively working on a **Physics-Informed Neural Network (PINN)** to estimate friction in real-time.
 
 ---
 
@@ -28,7 +28,7 @@ The project is modularized into ROS2 nodes to keep the physics, control, and inp
 
 ---
 
-##Key Features
+## Key Features
 
 ### 1. 18-DOF Physical Model
 Most sims stop at 6 or 14 DOF. This model includes:
@@ -44,7 +44,7 @@ The vehicle uses a Linear Quadratic Regulator to stabilize the yaw rate and side
 * *Current Limitation:* It relies on accurate state estimation. If the theres mismatch with the physics constants the controller is not effective.
 
 ### 4. PINN Friction Observer (In Development)
-This is the active research part of the repo.I generated data using the model developed with varios maneuvers.
+This is the active research part of the repo.I generated data using the model developed with various maneuvers.
 I'm training a recurrent Physics-Informed Neural Network to observe the vehicle's motion and "back-calculate" the friction coefficient.
 It uses a GRU layer at the input with (V_slip,Fz)
 * It combines data (vehicle states) with physics (LuGre equations) to estimate values.
