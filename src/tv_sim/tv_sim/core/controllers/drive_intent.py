@@ -1,13 +1,12 @@
 import numpy as np
 from ..utils.config import VehicleConfig
+from .wheel_manager import WheelManager
 
 class ReferenceModel:
-    def __init__(self, config: VehicleConfig, limit_factor=0.7):
+    def __init__(self, config: VehicleConfig, wheel_manager: WheelManager):
         self.cfg = config
-        
-        # Safety Factor: 
-        # 0.85 of what we think is peak frcition
-        self.limit_factor = limit_factor 
+        self.wheel_manager = wheel_manager 
+
 
 
         B, C, D, _ = self.cfg.tire_lat
@@ -25,22 +24,50 @@ class ReferenceModel:
         )
         
         self.last_vx = 0
-        self.filter_pass = 1.0 
+        self.tau = 0.15 
+        self.yaw_rate_prev = 0.0
 
-    def get_target_yaw_rate(self, vx: float, delta: float, mu: float = None):
+    def update_K_us(self):
+        # Summing axle loads
+        fz_f = self.wheel_manager.wheel_observer_fl.fz + self.wheel_manager.wheel_observer_fr.fz
+        fz_r = self.wheel_manager.wheel_observer_rl.fz + self.wheel_manager.wheel_observer_rr.fz
+
+        
+        self.c_alpha_f = self.cfg.lugre_normalized_stiffness * fz_f
+        self.c_alpha_r = self.cfg.lugre_normalized_stiffness * fz_r
+
+
+        # Use these for a stable, ideal Kus
+        self.K_us = (self.cfg.m) * (
+            (self.cfg.b / (self.cfg.L * self.c_alpha_f)) - 
+            (self.cfg.a / (self.cfg.L * self.c_alpha_r))
+        )
+
+    def get_target_yaw_rate(self, vx: float, ax: float, ay: float, delta: float, dt: float ):
         """
         Calculates the desired yaw rate based on speed, steering
         """
-        # Default to config mu if none provided, but allow dynamic updates
-        if mu is None:
-            mu = self.cfg.mu_s
-        self.last_vx = vx
+      
+        self.update_K_us()  # Update K_us based on current tire conditions
 
-        if abs(vx) < 0.5:
-            return 0.0
-    
-        yaw_target = (vx / (self.cfg.L + self.K_us * vx**2)) * delta
-        max_yaw_rate = self.limit_factor * (mu * self.cfg.g / abs(vx))
-        
-        return np.clip(yaw_target, -max_yaw_rate, max_yaw_rate)
+
+        if abs(vx) < 0.1:
+            self.yaw_rate_prev = 0
+
+            return 0
+        else:
+            yaw_target = (vx / (self.cfg.L + self.K_us * vx**2)) * delta
+        max_yaw_rate = self.wheel_manager.get_max_yaw_rate(vx,ax,ay)
+
+
+        yaw_capped = np.clip(yaw_target, -max_yaw_rate, max_yaw_rate)
+
+
+        yaw_capped = np.clip(yaw_target, -max_yaw_rate, max_yaw_rate)
+
+        yaw_target = self.yaw_rate_prev + (dt / self.tau) * (yaw_capped - self.yaw_rate_prev)
+        self.yaw_rate_prev = yaw_target
+
+        return yaw_target
+
     

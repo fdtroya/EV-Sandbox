@@ -27,11 +27,11 @@ class VehicleConfig:
 
         #Lugre Params
    
-        self.sigma0 = np.array([45.0, 35.0])    # [Long, Lat] stiffness (m^-1)
+        self.sigma0 = np.array([45.0,35.0])    # [Long, Lat] stiffness (m^-1)
         self.sigma1 = np.array([1.2, 1.0])      # [Long, Lat] damping (s/m)
         self.sigma2 = np.array([0.001, 0.001])  # [Long, Lat] viscous (s/m)
-        self.mu_s = 0.7                         # Static friction 
-        self.mu_k = 0.6                         # Kinetic friction 
+        self.mu_s = 0.6                         # Static friction 
+        self.mu_k = 0.4                        # Kinetic friction 
         self.vs = 2.5                           # Stribeck velocity (m/s)
 
      
@@ -39,6 +39,8 @@ class VehicleConfig:
 
         self.tire_long = self.get_bcd_from_lugre(0)# Fx parameters
         self.tire_lat  = self.get_bcd_from_lugre(1)# Fy parameters
+        #self.lugre_normalized_stiffness=(self.sigma0[1] * (0.12)**2 / 2) / (self.m * self.g / 4)
+        self.lugre_normalized_stiffness = 20.0
         
         
                 
@@ -58,7 +60,9 @@ class VehicleConfig:
 
     def get_bcd_from_lugre(self,i):
         # D is the peak friction
-        D = self.mu_k
+        Fz=self.m*self.g/4
+
+        D = self.mu_k* Fz
         
         # Cornering stiffness 
 
@@ -66,9 +70,8 @@ class VehicleConfig:
         
         # C is usually ~1.3 
         C = 1.3
-        Fz=self.m*self.g/4
         # Solve for B
-        B = C_alpha / (C * D * Fz)
+        B = C_alpha / (C * D )
 
         E=0.8
         
