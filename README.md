@@ -91,6 +91,8 @@ It uses a GRU layer at the input with (V_slip,Fz)
 * [ ] **Viz:** Add Foxglove/Rviz visualizations for tire force vectors.
 
 ---
+## Current results
+![TV and friction simulation Plot](graphics/simulation_TV.png)
 
 ## 🤝 Contributing
 
